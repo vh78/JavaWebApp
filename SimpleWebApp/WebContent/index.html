@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <title>Home Page</title>
+  </head>
+  <body>
+ 
+     <jsp:include page="_header.jsp"></jsp:include>
+    
+      <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="${pageContext.request.contextPath}/">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+     <li> <a href="login">Login</a></li>
+    </ul>
+  </div>
+</nav>
+     
+      <div class="jumbotron text-center">
+  <p>CRUD</p> 
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Create Product</h3>
+      <p>In this  simple project, you can add new product.</p>
+      <p>Every product have code, name and price.</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Edit product</h3>
+      <p>In this simple project, you can edit every products. </p>
+      <p>You can edit code, name and price.</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Delete product</h3>        
+      <p>In this simple project, you can delete every products.</p>
+      <p>You can delete every product.</p>
+    </div>
+  </div>
+</div>
+ 
+     <jsp:include page="_footer.jsp"></jsp:include>
+ 
+  </body>
